@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#FAF7F2">
   <meta name="description" content="Handcrafted resin art — coasters, vases, sculptures & more. Made in Cebu, Philippines.">
+  <meta name="apple-mobile-web-app-title" content="Petals & Pour">
+  <title>Petals & Pour – Resin Studio</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Luminae Craft">
-  <title>Luminae Craft – Handmade Resin Art</title>
-  <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon-192.png">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,9 +56,14 @@
     }
     .logo {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem; font-weight: 400; letter-spacing: 0.1em;
+      font-size: 1.25rem; font-weight: 400; letter-spacing: 0.06em;
       color: var(--ink); text-decoration: none;
-      display: flex; align-items: baseline; gap: 0.2em;
+      display: flex; flex-direction: column; line-height: 1.1;
+    }
+    .logo-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--rose); font-weight: 500; line-height: 1;
     }
     .logo-dot { color: var(--rose); font-size: 1.8rem; line-height: 0; position: relative; top: 4px; }
     .nav-links { display: flex; gap: 2.2rem; list-style: none; }
@@ -436,10 +440,15 @@
     .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
     .footer-logo {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem; color: var(--cream); text-decoration: none; letter-spacing: 0.1em;
-      display: inline-flex; align-items: baseline; gap: 0.15em; margin-bottom: 0.9rem;
+      font-size: 1.25rem; color: var(--cream); text-decoration: none; letter-spacing: 0.06em;
+      display: inline-flex; flex-direction: column; line-height: 1.1; margin-bottom: 0.9rem;
     }
-    .footer-logo .footer-dot { color: var(--rose); font-size: 1.5rem; line-height: 0; position: relative; top: 3px; }
+    .footer-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.56rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--rose); font-weight: 500;
+    }
+    .footer-dot { color: var(--rose); font-size: 1.5rem; line-height: 0; position: relative; top: 3px; }
     .footer-brand p { font-size: 0.78rem; line-height: 1.85; }
     .footer-col h5 { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(250,247,242,0.35); margin-bottom: 1rem; font-weight: 500; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
@@ -523,7 +532,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="logo">Luminae<span class="logo-dot">·</span>Craft</a>
+  <a href="#" class="logo">Petals &amp; Pour<span class="logo-sub">Resin Studio</span></a>
   <ul class="nav-links">
     <li><a href="#shop">Shop</a></li>
     <li><a href="#custom-vase">Custom Vase</a></li>
@@ -693,7 +702,7 @@
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="#" class="footer-logo">Luminae<span class="footer-dot">·</span>Craft</a>
+      <a href="#" class="footer-logo">Petals &amp; Pour<span class="footer-sub">Resin Studio</span></a>
       <p>Handcrafted resin art from the heart of Cebu, Philippines. Every piece poured with love and intention.</p>
     </div>
     <div class="footer-col">
@@ -725,7 +734,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Luminae Craft. All rights reserved.</p>
+    <p>© 2025 Petals & Pour. All rights reserved.</p>
     <p>Handmade in Cebu, Philippines 🌺</p>
   </div>
 </footer>
